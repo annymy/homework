@@ -10,7 +10,7 @@ public final class Person {//immutable class
         this.home = new Home(home);
     }
 
-    public String getDateOfBight() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 

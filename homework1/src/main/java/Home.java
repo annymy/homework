@@ -12,7 +12,7 @@ public class Home { //mutable class
     public Home(Home home){
         this.address = home.getAddress();
         this.rooms = home.getRooms();
-        this.squareMeters = home.getSqr();
+        this.squareMeters = home.getSquareMeters();
     }
 
     public String getAddress() {
@@ -23,11 +23,11 @@ public class Home { //mutable class
         this.address = address;
     }
 
-    public double getSqr() {
+    public double getSquareMeters() {
         return squareMeters;
     }
 
-    public void setSqr(double squareMeters) {
+    public void setSquareMeters(double squareMeters) {
         this.squareMeters = squareMeters;
     }
 
