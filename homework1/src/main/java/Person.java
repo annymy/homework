@@ -1,17 +1,17 @@
 public final class Person {//immutable class
 
     private final String name;
-    private final String dateOfBight;
+    private final String dateOfBirth;
     private final Home home;
 
-    public Person(String dateOfBight, String name, Home home) {
-        this.dateOfBight = dateOfBight;
+    public Person(String name, String dateOfBirth, Home home) {
+        this.dateOfBirth = dateOfBirth;
         this.name = name;
         this.home = new Home(home);
     }
 
     public String getDateOfBight() {
-        return dateOfBight;
+        return dateOfBirth;
     }
 
 
@@ -26,7 +26,7 @@ public final class Person {//immutable class
     @Override
     public String toString() {
         return name + " " +
-                dateOfBight +
-                ", adress " + home;
+                dateOfBirth +
+                ", address " + home;
     }
 }

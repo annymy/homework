@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PersonTest {
 
     @Test
-    public void shouldNotBeChangeHomeWhenAddressChanges(){
+    public void shouldNotChangePersonHomeWhenOriginalHomeChanges(){
         Home home = new Home("Penza", 35, 2);
-        Person person = new Person("Zina", "22.12.2001", home);
+        Person person = new Person("Alex", "22.12.2001", home);
 
         home.setAddress("Moscow");
 
@@ -15,9 +15,9 @@ public class PersonTest {
     }
 
     @Test
-    public void shouldNotBeChangesPersonsHome(){
+    public void shouldNotChangePersonsHome(){
         Home home = new Home("Madrid", 150, 4);
-        Person person = new Person("Oleg", "30.01.1964", home);
+        Person person = new Person("Zina", "30.01.1964", home);
 
         Home personsHome = person.getHome();
         personsHome.setAddress("Tbilisi");
